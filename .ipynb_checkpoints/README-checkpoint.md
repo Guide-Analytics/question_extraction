@@ -32,7 +32,7 @@ Extracting questions from a text
     * In many long and/or ungrammatical sentences, whether or not the wh-word is in a clause cannot be reliably determined
     * In most of these cases it causes a sentence to be falsely categorized as a question
 
-### Yn-questions
+### YN-questions
 * Algorithm:
     * Check if first word in the sentence is an auxiliary verb
     * If so, check if the following phrase is a noun phrase that is the subject of the verb
