@@ -58,7 +58,7 @@
     * Used a machine learning algorithm trained on a large dataset of text messages
     * This algorithm was only about 80% accurate, so several additional rules were applied to improve results
     * In particular, yn-questions were often missed, so when a sentence was determined to not be a sentence it was double-checked to see if the first word was in the set of auxiliaries that could begin sentences
-    * The appearance of a wh-word was sometimes considered indicative of a question even when it was used in another function
+    * The appearance of a wh-word was sometimes considered indicative of a question even when it was used in a different function
     * To account for this, sentences deemed wh-questions were double-checked to find if the wh-words in question appeared in a certain set of positions
 * Performance
     * The rules-based supplements were in no way exhaustive of the possible patterns for questions, but were designed to complement the ML algorithm
@@ -68,3 +68,4 @@
     * Yn-question algorithm could be fooled by various, though mostly relatively uncommon, sentence structures, including subject-dropping and certain preposed clauses
     * Wh-question detection was particularly bad. Only a small (though important and frequent) set of sentence structures were captured, so many questions went undetected
     * Additionally, minor deviation from standard grammatical rules generated bad results
+    * All these issues were solved or greatly ameliorated when the algorithm was changed to a mainly dependency-based one, described above
