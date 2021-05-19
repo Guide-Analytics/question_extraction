@@ -16,6 +16,7 @@
     * Low false negative rate, i.e. questions are nearly always correctly identified as such
     * Good, but slightly worse, false positive rate. A small portion of the output is typically statements that are similar to questions in some ways
     * These include certain long complex sentences, certain colloquial structures, and some highly ungrammatical sentences
+    * Relatively slow, primarily due to parsing
 
 ## Question Determination
 * Goals:
