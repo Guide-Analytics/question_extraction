@@ -70,3 +70,22 @@
     * Wh-question detection was particularly bad. Only a small (though important and frequent) set of sentence structures were captured, so many questions went undetected
     * Additionally, minor deviation from standard grammatical rules generated bad results
     * All these issues were solved or greatly ameliorated when the algorithm was changed to a mainly dependency-based one, described above
+
+## Future Steps
+
+* Syntactic Structures
+    * Syntactic structures identified as questions currently uses a rules-based approach
+    * Accuracy could be improved by transitioning to a machine learning model
+    * Instead of looking for certain set structures, the set of qualifying structures would be learned from a corpus
+    * Would be much better adapted to colloquial language, grammatical mistakes, misparsings by the parser, as well as any possible domain-specific language
+    * One model is described by Wang and Chua: Wang, Kai, and Tat-Seng Chua. "Exploiting salient patterns for question detection and question retrieval in community-based question answering." Proceedings of the 23rd International Conference on Computational Linguistics (Coling 2010). 2010.
+    * Uses lexical and syntactic rules
+* Rhetorical or sarcastic questions
+    * Currently a large portion of the questions extracted are rheotical or sarcastic, which offer little insight into actual inquiries by customers
+    * Useful information could be condensed if these were eliminated
+    * Topic modelling may be a solution to this; questions not assigned a meaningful topic can be assumed to be rhetorical or otherwise lacking in substance
+    * Duan et al. describe a machine learning model that can detect sarcasm: Diao, Yufeng, et al. "A Multi-Dimension Question Answering Network for Sarcasm Detection." IEEE Access 8 (2020): 135152-135161.
+    * Their model has an F1 score of around 70-75%
+* Similar questions
+    * Looking at common themes of questions could help generate insight without looking through many questions
+    * Duan et al. describe a machine learnin
