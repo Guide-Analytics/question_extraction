@@ -79,7 +79,7 @@
     * Instead of looking for certain set structures, the set of qualifying structures would be learned from a corpus
     * Would be much better adapted to colloquial language, grammatical mistakes, misparsings by the parser, as well as any possible domain-specific language
     * One model is described by Wang and Chua: Wang, Kai, and Tat-Seng Chua. "Exploiting salient patterns for question detection and question retrieval in community-based question answering." Proceedings of the 23rd International Conference on Computational Linguistics (Coling 2010). 2010.
-    * Uses lexical and syntactic rules
+    * Uses lexical and syntactic rules; F1 score is about 91%
 * Rhetorical or sarcastic questions
     * Currently a large portion of the questions extracted are rheotical or sarcastic, which offer little insight into actual inquiries by customers
     * Useful information could be condensed if these were eliminated
@@ -88,4 +88,5 @@
     * Their model has an F1 score of around 70-75%
 * Similar questions
     * Looking at common themes of questions could help generate insight without looking through many questions
-    * Duan et al. describe a machine learnin
+    * Duan et al. describe a machine learning model that is intended for use in suggesting similar questions on Q&A forums: Duan, Huizhong, et al. "Searching questions by identifying question topic and question focus." Proceedings of Acl-08: HLT. 2008.
+    * While this model is intended to assign similarity scores of many questions to a particular question, it may be able to be used to create similar classes of questions
